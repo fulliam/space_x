@@ -33,7 +33,7 @@ CREATE USER admin_space WITH LOGIN PASSWORD 'adminpassword';
 ```
 **Выдать все права на базу данных для роли**  
 ```bash
-GRANT ALL PRIVILEGES ON DATABASE space TOadmin_space;
+GRANT ALL PRIVILEGES ON DATABASE space TO admin_space;
 ```
 ### Создать в корневом каталоге бэкэнда файл .env  
 ```bash
@@ -88,7 +88,7 @@ npm run serve
 ```bash
 npm run build
 ```
-**По умолчанию фронт :8080 стучится на бэк :8000**
+# **По умолчанию фронт :8080 стучится на бэк :8000**
 ### Автоисправление линтера
 ```bash
 npm run lint -- --fix
