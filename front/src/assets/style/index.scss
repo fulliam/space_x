@@ -1,0 +1,18 @@
+@import './header/index.scss';
+@import './body/index.scss';
+@import './breakpoints/index.scss';
+
+#app {
+    font-family: 'Museo Sans Cyrl', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}  
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: white;
+}

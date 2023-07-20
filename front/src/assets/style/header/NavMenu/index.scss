@@ -1,0 +1,85 @@
+.nav-menu {
+    display: flex;
+    background-color: rgba(13, 5, 5, 0.453);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.435);
+    align-items: center;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-menu__logo {
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.435);
+    padding: 30px;
+    margin-right: 120px;
+}
+
+.corner-logo__1 {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid hsl(0, 0%, 89%);
+    width: 8px;
+    height: 8px;
+    transition: width 0.3s, height 0.3s;
+    top:0;
+    left:0;
+    border-bottom: none;
+    border-right: none;
+}
+
+.corner-logo__2 {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid hsl(0, 0%, 89%);
+    width: 8px;
+    height: 8px;
+    transition: width 0.3s, height 0.3s;
+    top:0;
+    right:0;
+    border-bottom: none;
+    border-left: none;
+}
+
+.corner-logo__3 {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid hsl(0, 0%, 89%);
+    width: 8px;
+    height: 8px;
+    transition: width 0.3s, height 0.3s;
+    bottom:0;
+    left:0;
+    border-top: none;
+    border-right: none;
+}
+
+.corner-logo__4 {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid hsl(0, 0%, 89%);
+    width: 8px;
+    height: 8px;
+    transition: width 0.3s, height 0.3s;
+    bottom:0;
+    right:0;
+    border-top: none;
+    border-left: none;
+}
+
+.nav-menu__link {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: #dadada;
+    margin: 15px;
+    padding: 5px;
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(143, 141, 141);
+        transition: all 0.5s;
+        border-bottom: 1px solid rgb(120, 120, 120)
+    }
+}

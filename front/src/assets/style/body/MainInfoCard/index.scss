@@ -1,0 +1,75 @@
+.info-card {
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__1 {
+        background-image: linear-gradient(to right bottom, hsl(0, 0%, 0%, 0.220), transparent, hsla(0, 0%, 60%, 0.150));
+
+        &:hover {
+            background-image: linear-gradient(to right bottom, hsl(0, 0%, 0%, 0.220), transparent, hsla(0, 0%, 60%, 0.333));
+            border: 1px solid hsl(0, 0%, 60%);
+            border-top: none;
+            border-left: none;
+            border-image: linear-gradient(to left top, hsl(0, 0%, 60%), transparent, hsl(0, 0%, 60%));
+            border-image-slice: 1;
+        }
+    }
+
+    &__2 {
+        background-image: linear-gradient(to left bottom, hsl(0, 0%, 0%, 0.220), transparent, hsl(0, 0%, 60%, 0.150));
+
+        &:hover{
+            background-image: linear-gradient(to left bottom, hsl(0, 0%, 0%, 0.220), transparent, hsl(0, 0%, 60%, 0.333));
+            border: 1px solid hsl(0, 0%, 60%);
+            border-top: none;
+            border-right: none;
+            border-image: linear-gradient(to right top, hsl(0, 0%, 60%), transparent, hsl(0, 0%, 60%));
+            border-image-slice: 1;
+        }
+    }
+
+    &__3 {
+        background-image: linear-gradient(to top right, hsl(0, 0%, 0%, 0.220), transparent, hsl(0, 0%, 60%, 0.150));
+
+        &:hover {
+            background-image: linear-gradient(to top right, hsl(0, 0%, 0%, 0.220), transparent, hsl(0, 0%, 60%, 0.333));
+            border: 1px solid hsl(0, 0%, 60%);
+            border-bottom: none;
+            border-left: none;
+            border-image: linear-gradient(to right top, hsl(0, 0%, 60%), transparent, hsl(0, 0%, 60%));
+            border-image-slice: 1;
+        }
+    }
+
+    &__4 {
+        background-image: linear-gradient(to top left, hsla(0, 0%, 0%, 0.220), transparent, hsl(0, 0%, 60%, 0.150));
+
+        &:hover {
+            background-image: linear-gradient(to top left, hsla(0, 0%, 0%, 0.220), transparent, hsl(0, 0%, 60%, 0.333));
+            border: 1px solid hsl(0, 0%, 60%);
+            border-bottom: none;
+            border-right: none;
+            border-image: linear-gradient(to left top, hsl(0, 0%, 60%), transparent, hsl(0, 0%, 60%));
+            border-image-slice: 1;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        color: hsl(0, 0%, 60%);
+    }
+
+    &__number {
+        color: rgb(200, 200, 200);
+        font-size: 60px;
+    }
+
+    &__year {
+        color: rgb(200, 200, 200);
+        font-size: 20px;
+    }
+}
