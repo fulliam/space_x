@@ -11,19 +11,23 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 from .config import SECRET_KEY, DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME
 from pathlib import Path
+import os
 
-
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 SECRET_KEY = SECRET_KEY
 
-
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'jokechat.online'
+    '94.139.246.64'
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -31,7 +35,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8080',
     'http://localhost:8080',
-    'https://jokechat.online',
+    'http://94.139.246.64',
 ]
 
 
@@ -137,6 +141,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Default primary key field type

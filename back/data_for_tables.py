@@ -15,14 +15,14 @@ cur = conn.cursor()
 menu_data = [
     ("Контакты", "/contact"),
     ("О Компании", "/about"),
-    ("Гарантии", "/")
-    ("График полетов", "/")
-    ("Технологии", "/")
+    ("Гарантии", "/"),
+    ("График полетов", "/"),
+    ("Технологии", "/"),
     ("Главная", "/")
 ]
 
 for data in menu_data:
-    cur.execute("INSERT INTO editor_menu (title, url) VALUES (%s, %s)", data)
+    cur.execute("INSERT INTO edit_menu (title, url) VALUES (%s, %s)", data)
 
 # Заполнение таблицы InfoCard данными
 info_card_data = [
@@ -33,7 +33,7 @@ info_card_data = [
 ]
 
 for data in info_card_data:
-    cur.execute("INSERT INTO editor_infocard (top, middle_number, middle_text, bottom) VALUES (%s, %s, %s, %s)", data)
+    cur.execute("INSERT INTO edit_infocard (top, middle_number, middle_text, bottom) VALUES (%s, %s, %s, %s)", data)
 
 # Фиксация изменений и закрытие соединения
 conn.commit()

@@ -1,0 +1,14 @@
+[Unit]
+Description=spacex service
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/var/www/spacex/back
+Environment="PATH=/var/www/spacex/back"
+ExecStart=/usr/bin/python3 manage.py runserver
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,6 +1,6 @@
 # SPACE X site
-[live-demo](https://jokechat.online/)
->*просто был свободный домен*
+[live-demo](http://94.139.246.64/)
+
 ## Чтобы протестировать его работу Вам необходимо:  
 ### Клонировать репозиторий  
 ```bash
@@ -12,7 +12,7 @@ cd /space_X
 ```
 ### Установить зависимости  
 ```bash
-pip instal -r requirements.txt
+pip install -r requirements.txt
 ```
 ## Создать базу данных, роль   
 **Вход под суперпользователем**  
@@ -48,9 +48,13 @@ DB_HOST = localhost
 DB_PORT = 5432
 DB_NAME = space
 ```
+### Собрать статику джанго
+```bash
+python3 manage.py collectstatic
+```
 ### Создать миграции  
 ```bash
-python3 manage.py makemigrations editor
+python3 manage.py makemigrations edit
 ```
 ```bash
 python3 manage.py migrate
